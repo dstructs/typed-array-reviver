@@ -23,7 +23,7 @@ var revive = require( 'dstructs-typed-array-reviver' );
 Revives a JSON-serialized [typed array][typed-array].
 
 ``` javascript
-var str = '{"type":"Int8Array""data":[0,0,0,0]}';
+var str = '{"type":"Int8Array","data":[0,0,0,0]}';
 
 var arr = JSON.parse( str, revive );
 // returns Int8Array([0,0,0,0])
